@@ -1,5 +1,5 @@
 <?php
-require_once'./Mess.php';
+require_once'./class/Mess.php';
 $Mess = new Mess();
 $query_result = $Mess->select_breking_news();
 $meal_info = mysqli_fetch_assoc($query_result)
@@ -13,10 +13,10 @@ $meal_info = mysqli_fetch_assoc($query_result)
         <title>Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="css/font/all.min.css">
-        <link rel="stylesheet" href="css/animate.css-master/animate.min.css">
-        <link rel="stylesheet" href="newcss.css">
-        <link rel="stylesheet" href="css2/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font/all.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css-master/animate.min.css">
+        <link rel="stylesheet" href="assets/css/newcss.css">
+        <link rel="stylesheet" href="assets/css2/bootstrap.min.css">
 
 
     </head>
@@ -136,9 +136,9 @@ $meal_info = mysqli_fetch_assoc($query_result)
 
 
 
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/all.min.js"></script>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/all.min.js"></script>
 
-        <script src="js2/bootstrap.min.js"></script>
+        <script src="assets/js2/bootstrap.min.js"></script>
     </body>
 </html>

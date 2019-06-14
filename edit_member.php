@@ -1,6 +1,6 @@
 <?php
 $member_id = $_GET['id'];
-require_once './Mess.php';
+require_once './class/Mess.php';
 $mess = new Mess();
 $query_result = $mess->select_members_info($member_id);
 $mess_info = mysqli_fetch_assoc($query_result);
@@ -17,7 +17,7 @@ if (isset($_POST['btn'])) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
 
 
@@ -103,8 +103,8 @@ if (isset($_POST['btn'])) {
 
 
 
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
 
     </body>
 </html

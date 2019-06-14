@@ -2,7 +2,7 @@
 $message = '';
 if (isset($_POST['btn'])) {
 
-    require_once'./Login.php';
+    require_once'./class/Login.php';
     $login = new Login;
     $message = $login->admin_login_check($_POST);
 }
@@ -14,9 +14,9 @@ if (isset($_POST['btn'])) {
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet"href="css/animate.min.css">
-        <link rel="stylesheet" href="css2/bootstrap.min.css">
-        <link rel="stylesheet" href="css/../newcss.css">
+        <link rel="stylesheet"href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css2/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/newcss.css">
 
 
     </head>
@@ -88,8 +88,8 @@ if (isset($_POST['btn'])) {
 
 
 
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

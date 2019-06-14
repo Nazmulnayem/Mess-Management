@@ -1,7 +1,7 @@
 <?php
 $message = '';
 if (isset($_POST['btn'])) {
-    require_once'./Mess.php';
+    require_once'./class/Mess.php';
     $Mess = new Mess();
     $message = $Mess->save_member_info($_POST);
 }
@@ -14,7 +14,7 @@ if (isset($_POST['btn'])) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href=""
 
 
@@ -99,8 +99,8 @@ if (isset($_POST['btn'])) {
 
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
 </body>
 </html>

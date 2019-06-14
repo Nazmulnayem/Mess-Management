@@ -1,6 +1,6 @@
 <?php
 $message = '';
-require_once'./Mess.php';
+require_once'./class/Mess.php';
 $Mess = new Mess();
 
 if (isset($_GET['delete'])) {
@@ -20,7 +20,7 @@ $query_result = $Mess->select_all_member_info();
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
         <script>
             function checkDelete(){
@@ -105,8 +105,8 @@ $query_result = $Mess->select_all_member_info();
 
 
 
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
 
     </body>
 </html>
